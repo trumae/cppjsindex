@@ -1,0 +1,11 @@
+#! /usr/bin/nodejs
+
+const cppjsindex = require('./cppjsindex.js');
+
+if (process.argv.length != 3) {
+   console.log("usage: testjs <key>");
+} else {
+   var key = process.argv[2];
+   res = cppjsindex.index(key);
+   console.log(res);
+}
